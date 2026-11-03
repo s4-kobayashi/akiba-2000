@@ -6,7 +6,11 @@ HTML は VRChat 本体へアップロードできないので、VRChat に似た
 
 **写実の到達点:** 実在の街路として読める水準ですが、写真と見間違える水準ではありません。独立監査の判定は総合「部分的」です(詳細は「写実の到達点と限界」)。
 
-## 起動
+## Web で使う
+
+<https://s4-kobayashi.github.io/akiba-2000/> を開くだけで起動します(GitHub Pages。初回は素材約 54MB の読み込みに時間がかかります)。
+
+## 手元で起動
 
 [uv](https://docs.astral.sh/uv/) が必要です。プロジェクトのフォルダで次を実行します。
 
@@ -108,7 +112,7 @@ Playwright で実測した値です。fps は別プロセスが GPU を使って
 | `assets/` | CC0 のテクスチャと空 |
 | `vendor/three/` | three.js r171 |
 | `tools/` | 配信、素材の取得、検証のスクリプト |
-| `shots/` | 検証で撮った画面 |
+| `shots/` | 検証で撮った画面(リポジトリには含めていない) |
 | `SOURCES.md` | 史実の区分、判断の記録 |
 | `DESIGN_ROUND2.md`〜`DESIGN_ROUND6.md` | 写実改修の記録 |
 | `docs/CONFORMANCE.md` | 計画書との照合 |
