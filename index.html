@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>秋葉原 2000</title>
+<meta name="description" content="バスケットコートがあった頃の秋葉原駅前を歩けるブラウザ空間">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./style.css">
+<script type="importmap">
+{"imports":{
+  "three":"./vendor/three/build/three.module.js",
+  "three/addons/":"./vendor/three/examples/jsm/"
+}}
+</script>
+</head>
+<body>
+<canvas id="scene" tabindex="-1" aria-label="2000年頃の秋葉原駅前の3D空間"></canvas>
+
+<section id="start" aria-labelledby="start-title">
+  <div class="start-panel">
+    <p class="kicker">INSTANCE 2000.06 ／ 千代田区外神田</p>
+    <h1 id="start-title">秋葉原 2000</h1>
+    <p class="lede">再開発の前、駅前には青い円のバスケットコートがあった。1993 年 9 月に開いて 2001 年 7 月 31 日に閉じた広場と、看板の並ぶ電気街を歩く。</p>
+    <div class="load" aria-live="polite">
+      <div class="track"><div id="bar"></div></div>
+      <p id="load-label">読み込みを始めています</p>
+    </div>
+    <div class="actions">
+      <button id="join" type="button">ワールドに入る</button>
+      <button id="enter-vr" type="button" hidden>VR で入る</button>
+    </div>
+    <dl class="keys">
+      <div><dt>WASD</dt><dd>歩く</dd></div><div><dt>Shift</dt><dd>走る</dd></div>
+      <div><dt>マウス</dt><dd>見回す</dd></div><div><dt>Space</dt><dd>ジャンプ</dd></div>
+      <div><dt>V</dt><dd>一人称/三人称</dd></div><div><dt>1 / 2</dt><dd>手を振る/シュート</dd></div>
+      <div><dt>クリック</dt><dd>ボールを投げる</dd></div><div><dt>M</dt><dd>地図と史実メモ</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="fallback" hidden>
+  <div class="start-panel">
+    <h1>秋葉原 2000</h1>
+    <p class="lede">この端末では WebGL2 が使えないため、3D の街を表示できません。別のブラウザか PC でお試しください。</p>
+  </div>
+</section>
+
+<div id="hud" hidden>
+  <p id="zone" aria-live="polite"></p>
+  <p id="ballhint"></p>
+  <p id="toast" role="status"></p>
+  <p id="keyline">M メニュー ／ V カメラ ／ 1 手を振る</p>
+  <div id="stick" hidden></div>
+  <div class="touch">
+    <button id="t-menu" type="button">地図</button>
+    <button id="t-cam" type="button">カメラ</button>
+    <button id="t-wave" type="button">手を振る</button>
+    <button id="t-throw" type="button">投げる</button>
+    <button id="t-jump" type="button">跳ぶ</button>
+  </div>
+</div>
+
+<section id="menu" hidden aria-label="メニュー">
+  <div class="menu-grid">
+    <div class="col">
+      <h2>移動</h2>
+      <canvas id="map" width="340" height="540" aria-label="街区の地図。クリックした近くの地点へ移動します"></canvas>
+      <div id="places"></div>
+      <button id="resume" type="button">街へ戻る</button>
+    </div>
+    <div class="col notes">
+      <h2>このワールドについて</h2>
+      <p>舞台は 2000 年初夏の午前。写真と回想に基づく再現で、実測図ではありません。距離と高さは写真からの目測です。</p>
+      <h3>記録にあるもの</h3>
+      <ul>
+        <li>コートの開設 1993 年 9 月、閉鎖 2001 年 7 月 31 日。名称は秋葉原駅前広場(フォト秋葉原の投稿)。公的資料は未確認です。</li>
+        <li>青果市場の移転跡地の暫定利用で、跡には東京タイムズタワー、ダイビル、UDX などが建ちました。</li>
+        <li>コートの色、白い柵、赤レンガの歩道、看板の並びは当時の写真から写しました。</li>
+      </ul>
+      <h3>推定したもの</h3>
+      <ul>
+        <li>各建物の位置と奥行き、広場の正確な形。写真に映らない中央通り側の看板配置と、ガード下の店。</li>
+        <li>ゴールの細部と本数。</li>
+      </ul>
+      <h3>作り替えたもの</h3>
+      <ul>
+        <li>ロゴは文字組みに置き換え、広告の人物とキャラクターは描いていません。</li>
+        <li>通行人と 3on3 の人たちは架空です。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

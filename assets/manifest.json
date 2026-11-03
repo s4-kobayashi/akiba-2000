@@ -1,0 +1,62 @@
+{
+ "asphalt": {
+  "source": "asphalt_02",
+  "diff": "assets/tex/asphalt_clean_diff.jpg",
+  "nor": "assets/tex/asphalt_clean_nor.jpg",
+  "arm": "assets/tex/asphalt_arm.jpg"
+ },
+ "court": {
+  "source": "concrete_floor_worn_001",
+  "diff": "assets/tex/court_diff.jpg",
+  "nor": "assets/tex/court_nor.jpg",
+  "arm": "assets/tex/court_arm.jpg"
+ },
+ "walk": {
+  "source": "concrete_pavers",
+  "diff": "assets/tex/walk_diff.jpg",
+  "nor": "assets/tex/walk_nor.jpg",
+  "arm": "assets/tex/walk_arm.jpg"
+ },
+ "brick": {
+  "source": "red_brick_pavers",
+  "diff": "assets/tex/brick_diff.jpg",
+  "nor": "assets/tex/brick_nor.jpg",
+  "arm": "assets/tex/brick_arm.jpg"
+ },
+ "slab": {
+  "source": "concrete_floor_damaged_01",
+  "diff": "assets/tex/slab_diff.jpg",
+  "nor": "assets/tex/slab_nor.jpg",
+  "arm": "assets/tex/slab_arm.jpg"
+ },
+ "viaduct": {
+  "source": "concrete_wall_008",
+  "diff": "assets/tex/viaduct_diff.jpg",
+  "nor": "assets/tex/viaduct_nor.jpg",
+  "arm": "assets/tex/viaduct_arm.jpg"
+ },
+ "plaster": {
+  "source": "white_plaster_rough_01",
+  "diff": "assets/tex/plaster_diff.jpg",
+  "nor": "assets/tex/plaster_nor.jpg",
+  "arm": "assets/tex/plaster_arm.jpg"
+ },
+ "tile": {
+  "source": "long_white_tiles",
+  "diff": "assets/tex/tile_diff.jpg",
+  "nor": "assets/tex/tile_nor.jpg",
+  "arm": "assets/tex/tile_arm.jpg"
+ },
+ "rust": {
+  "source": "rusty_metal_02",
+  "diff": "assets/tex/rust_diff.jpg",
+  "nor": "assets/tex/rust_nor.jpg",
+  "arm": "assets/tex/rust_arm.jpg"
+ },
+ "shutter": {
+  "source": "painted_metal_shutter",
+  "diff": "assets/tex/shutter_diff.jpg",
+  "nor": "assets/tex/shutter_nor.jpg",
+  "arm": "assets/tex/shutter_arm.jpg"
+ }
+}
